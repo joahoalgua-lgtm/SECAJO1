@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SECAJO: tecnología, celulares y electrónica en Guatemala." />
+  <title>SECAJO | Tecnología que conecta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#inicio" aria-label="SECAJO, inicio">
+      <span class="logo-mark">S</span><span>SECAJO</span>
+    </a>
+    <button class="menu-button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="cart-button" href="#productos">Mi carrito <span id="cart-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Tecnología con sello guatemalteco</p>
+        <h1>Lo último en tecnología,<br /><em>más cerca de ti.</em></h1>
+        <p class="hero-text">Celulares, accesorios y electrónica seleccionada para mantenerte conectado con lo que importa.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#productos">Ver productos <span>→</span></a>
+          <a class="button button-ghost" href="#nosotros">Conócenos</a>
+        </div>
+        <div class="trust-row">
+          <div><strong>+1,000</strong><span>clientes felices</span></div>
+          <div><strong>100%</strong><span>productos originales</span></div>
+          <div><strong>GT</strong><span>empresa guatemalteca</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Teléfono inteligente moderno">
+        <div class="hero-glow"></div>
+        <div class="phone phone-main">
+          <div class="phone-screen"><span class="screen-camera"></span><span class="screen-orb orb-one"></span><span class="screen-orb orb-two"></span><p>SECAJO<br /><small>connect</small></p></div>
+        </div>
+        <div class="floating-card delivery-card"><span>✦</span><div><strong>Envíos rápidos</strong><small>En toda Guatemala</small></div></div>
+        <div class="floating-card rating-card"><span>★</span><div><strong>4.9/5</strong><small>Clientes satisfechos</small></div></div>
+      </div>
+    </section>
+
+    <section class="categories" aria-label="Categorías">
+      <a href="#productos"><span class="category-icon">▣</span><strong>Smartphones</strong><small>Lo más nuevo</small></a>
+      <a href="#productos"><span class="category-icon">◉</span><strong>Audio</strong><small>Sonido sin límites</small></a>
+      <a href="#productos"><span class="category-icon">⌁</span><strong>Accesorios</strong><small>Todo lo que necesitas</small></a>
+      <a href="#productos"><span class="category-icon">◌</span><strong>Wearables</strong><small>Tu día, conectado</small></a>
+    </section>
+
+    <section class="products section" id="productos">
+      <div class="section-heading">
+        <div><p class="eyebrow">Selección SECAJO</p><h2>Productos que te acompañan</h2></div>
+        <button class="filter-button" id="filter-button">Todos los productos <span>⌄</span></button>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <span class="product-tag">NUEVO</span><div class="product-image violet"><div class="mini-phone dark-phone"><i></i><i></i><i></i></div></div>
+          <div class="product-info"><p>SMARTPHONES</p><h3>Galaxy Nova Pro</h3><div><strong>Q6,499</strong><button class="add-button" data-product="Galaxy Nova Pro" aria-label="Agregar Galaxy Nova Pro">+</button></div></div>
+        </article>
+        <article class="product-card">
+          <span class="product-tag sale">-15%</span><div class="product-image peach"><div class="headphones"><span></span><i></i><b></b></div></div>
+          <div class="product-info"><p>AUDIO</p><h3>Pulse Buds ANC</h3><div><strong>Q899</strong><button class="add-button" data-product="Pulse Buds ANC" aria-label="Agregar Pulse Buds ANC">+</button></div></div>
+        </article>
+        <article class="product-card">
+          <span class="product-tag">TOP</span><div class="product-image blue"><div class="watch"><span>10<br /><small>28</small></span></div></div>
+          <div class="product-info"><p>WEARABLES</p><h3>Active Watch S</h3><div><strong>Q1,299</strong><button class="add-button" data-product="Active Watch S" aria-label="Agregar Active Watch S">+</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="nosotros">
+      <div class="about-date"><span>DESDE</span><strong>2024</strong><i>19 JUL</i></div>
+      <div class="about-copy"><p class="eyebrow">Nuestra historia</p><h2>Nacimos para conectar a Guatemala con la innovación.</h2><p>SECAJO nació el 19 de julio de 2024 con una idea clara: hacer que la mejor tecnología sea fácil de encontrar, entender y disfrutar.</p><a href="#contacto" class="text-link">Hablemos <span>→</span></a></div>
+      <div class="about-shape"><span>GT</span></div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div><p class="eyebrow">Estamos para ayudarte</p><h2>¿Buscas algo en especial?</h2><p>Escríbenos y nuestro equipo te ayudará a encontrar la tecnología ideal.</p></div>
+      <form id="contact-form">
+        <label>Tu nombre<input required name="nombre" type="text" placeholder="Escribe tu nombre" /></label>
+        <label>Tu correo<input required name="correo" type="email" placeholder="correo@ejemplo.com" /></label>
+        <button class="button button-primary" type="submit">Enviar mensaje <span>→</span></button>
+        <p class="form-message" id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#inicio"><span class="logo-mark">S</span><span>SECAJO</span></a><p>© 2026 SECAJO · Tecnología que conecta.</p><div><a href="#inicio">Instagram</a><a href="#inicio">Facebook</a></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
